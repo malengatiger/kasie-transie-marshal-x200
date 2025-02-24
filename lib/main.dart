@@ -83,7 +83,7 @@ class KasieTransieMarshal extends StatelessWidget {
               nextScreen: const KasieIntro(),
               splashTransition: SplashTransition.fadeTransition,
               pageTransitionType: PageTransitionType.leftToRight,
-              backgroundColor: Colors.brown.shade800,
+              backgroundColor: Colors.teal.shade800,
             ),
           );
         });
