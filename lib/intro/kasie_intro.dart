@@ -251,8 +251,8 @@ class KasieIntroState extends State<KasieIntro>
             right: 48,
             child: ElevatedButton(
               style: ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll(Colors.pink),
-                  elevation: WidgetStatePropertyAll(8)),
+                  backgroundColor: MaterialStatePropertyAll(Colors.pink),
+                  elevation: MaterialStatePropertyAll(8)),
               onPressed: () {
                 onSignInWithEmail();
               },

@@ -18,7 +18,6 @@ import 'package:kasie_transie_library/widgets/ambassador/association_vehicle_pho
 import 'package:kasie_transie_library/widgets/language_and_color_chooser.dart';
 import 'package:kasie_transie_library/widgets/payment/cash_check_in_widget.dart';
 import 'package:kasie_transie_library/widgets/scanners/dispatch_helper.dart';
-import 'package:kasie_transie_library/widgets/scanners/scan_vehicle_for_media.dart';
 import 'package:kasie_transie_library/widgets/timer_widget.dart';
 import 'package:kasie_transie_library/widgets/vehicle_widgets/cars_for_rank_fee.dart';
 import 'package:kasie_transie_library/widgets/vehicle_widgets/routes_for_dispatch.dart';
@@ -183,10 +182,10 @@ class MarshalDashboardState extends State<MarshalDashboard>
 
   void _navigateToScanVehicleForMedia() {
     pp('$mm navigate to ScanVehicleForMedia ...  ');
-    NavigationUtils.navigateTo(
-      context: context,
-      widget: ScanVehicleForMedia(),
-    );
+    // NavigationUtils.navigateTo(
+    //   context: context,
+    //   widget: ScanVehicleForMedia(),
+    // );
   }
 
   Future _getData() async {
@@ -486,8 +485,8 @@ class MarshalDashboardState extends State<MarshalDashboard>
                         child: ElevatedButton(
                             style: ButtonStyle(
                                 backgroundColor:
-                                    WidgetStatePropertyAll(Colors.blue),
-                                elevation: const WidgetStatePropertyAll(8.0)),
+                                    MaterialStatePropertyAll(Colors.blue),
+                                elevation: const MaterialStatePropertyAll(8.0)),
                             onPressed: () {
                               _navigateToRoutesForDispatch();
                             },
@@ -507,8 +506,8 @@ class MarshalDashboardState extends State<MarshalDashboard>
                         child: ElevatedButton(
                             style: ButtonStyle(
                                 backgroundColor:
-                                    WidgetStatePropertyAll(Colors.green),
-                                elevation: const WidgetStatePropertyAll(8.0)),
+                                    MaterialStatePropertyAll(Colors.green),
+                                elevation: const MaterialStatePropertyAll(8.0)),
                             onPressed: () {
                               _navigateToCarForRankFee();
                             },
@@ -528,8 +527,8 @@ class MarshalDashboardState extends State<MarshalDashboard>
                         child: ElevatedButton(
                             style: ButtonStyle(
                                 backgroundColor:
-                                WidgetStatePropertyAll(Colors.pink),
-                                elevation: const WidgetStatePropertyAll(8.0)),
+                                MaterialStatePropertyAll(Colors.pink),
+                                elevation: const MaterialStatePropertyAll(8.0)),
                             onPressed: () {
                               _navigateToCashCheckIn();
                             },
