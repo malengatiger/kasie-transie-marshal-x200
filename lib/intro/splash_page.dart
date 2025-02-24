@@ -22,7 +22,7 @@ class _SplashWidgetState extends State<SplashWidget> {
   void _performSetup() async {
 
   }
-  💠
+
   @override
   Widget build(BuildContext context) {
     return Padding(
